@@ -1,0 +1,37 @@
+{
+  "name": "currency-convert",
+  "version": "1.0.0",
+  "description": "Convert amount from one currency to another",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/tiaanduplessis/currency-convert",
+    "type": "git"
+  },
+  "homepage": "https://github.com/tiaanduplessis/currency-convert",
+  "bugs": "https://github.com/tiaanduplessis/currency-convert",
+  "main": "index.js",
+  "bin": "cli.js",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "scripts": {
+    "test": "jest",
+    "format": "prettier-standard *.js",
+    "start": "npm run test",
+    "precommit": "npm test",
+    "pretest": "npm run format",
+    "docs": "documentation readme index.js --section=API"
+  },
+  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "devDependencies": {
+    "documentation": "^5.2.1",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "prettier-standard": "^6.0.0"
+  },
+  "dependencies": {
+    "money": "^0.2.0",
+    "puny-req": "^1.0.2"
+  }
+}
