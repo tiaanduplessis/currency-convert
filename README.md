@@ -56,6 +56,8 @@
 
 ## Install
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/currency-convert.svg)](https://greenkeeper.io/)
+
 ```sh
 $ npm install currency-convert
 # OR
