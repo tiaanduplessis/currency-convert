@@ -10,28 +10,28 @@
   "homepage": "https://github.com/tiaanduplessis/currency-convert",
   "bugs": "https://github.com/tiaanduplessis/currency-convert",
   "main": "index.js",
-  "bin": "cli.js",
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "scripts": {
     "test": "jest",
-    "format": "prettier-standard *.js",
-    "start": "npm run test",
-    "precommit": "npm test",
-    "pretest": "npm run format",
+    "lint": "standard --fix",
     "docs": "documentation readme index.js --section=API"
   },
-  "author": "tiaanduplessis <tiaanduplessis@hotmail.com>",
+  "author": "Tiaan du Plessis",
   "devDependencies": {
-    "documentation": "^6.3.1",
-    "husky": "^0.14.3",
-    "jest": "^21.2.1",
-    "prettier-standard": "^7.0.1"
+    "documentation": "^8.0.2",
+    "jest": "^23.4.1",
+    "standard": "^11.0.1"
   },
   "dependencies": {
+    "@tiaanduplessis/type": "^1.0.0",
     "money": "^0.2.0",
     "puny-req": "^1.0.2"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
   }
 }
